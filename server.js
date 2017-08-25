@@ -18,7 +18,7 @@ app.get('/Artical-two', function (req, res) {
 });
 
 app.get('/Artical-three', function (req, res) {
-  res.send('Artical three is requested and will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'artical-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
