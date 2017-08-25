@@ -5,12 +5,69 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var articalone= {
+    title:'vkas narhare | painting one',
+    heading:'Painting one',
+    date: 'Aug 26 2017',
+    content:`
+            <p>
+                Hello World! do you like my background painting. This is my painting, hope you like it.
+            </p> '
+}
+
+function createTemplate (data) {
+var htmlTempalet = `
+var title = data.title;
+var date = data.date;
+var heading = data.heading;
+var content = data.contentl
+
+<html>
+<head>
+<style> 
+ body {
+    background-image: url("https://scontent.fpnq1-1.fna.fbcdn.net/v/t1.0-9/16708516_722962471196518_341053957706971691_n.jpg?oh=0b7cdbad950ec61a6da88b874400281a&oe=5A166A4F");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-right: 668 x 457;
+}    
+</style>    
+<title>
+    vikas narhare | panitings
+</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+       <div>
+              <a href="/">home</a>
+       </div>  
+       <hr/>
+       <h1>
+            ${heading} 
+       </h1>
+       <div>
+            ${date} 
+       </div>
+       <div>
+            ${content}   
+      </div>
+  </div>
+</body>   
+</html>
+  ;
+return htmlTemplate;
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/Artical-one', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
+   res.send(createTemplate(articalone));
 });
 
 app.get('/Artical-two', function (req, res) {
