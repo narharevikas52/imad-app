@@ -25,14 +25,6 @@ var content = data.contentl
 
 <html>
 <head>
-<style> 
- body {
-    background-image: url("https://scontent.fpnq1-1.fna.fbcdn.net/v/t1.0-9/16708516_722962471196518_341053957706971691_n.jpg?oh=0b7cdbad950ec61a6da88b874400281a&oe=5A166A4F");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    margin-right: 668 x 457;
-}    
-</style>    
 <title>
     vikas narhare | panitings
 </title> 
