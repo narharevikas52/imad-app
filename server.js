@@ -23,8 +23,6 @@ var articals = {
                    Hello World! do you like my background painting. This is my painting, hope you like it.
                 </p>`
           },
-      
-
      'artical-three': {
              title:'vikas narhare | painting three',
              heading:'Painting three',
@@ -42,7 +40,7 @@ function createTemplate (data) {
    var heading = data.heading;
    var content = data.content;
 
-   var htmlTemplate = `
+   var htmlTemplate =`
    <html>
    <head>
     <title>
@@ -69,7 +67,7 @@ function createTemplate (data) {
       </div>
     </body>   
    </html>
-   ';
+   `;
    return htmlTemplate;
    }
 
