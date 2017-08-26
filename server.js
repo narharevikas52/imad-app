@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articals = {
-    articalone: {` 
+    'articalone': {` 
              title:'vikas narhare | painting two',
              heading:'Painting two',
              date: 'Aug 26 2017',
@@ -14,7 +14,7 @@ var articals = {
                    Hello World! do you like my background painting. This is my painting, hope you like it.
                 </p> '
           },
-    articaltwo: {` 
+    'articaltwo': {` 
              title:'vikas narhare | painting two',
              heading:'Painting two',
              date: 'Aug 26 2017',
@@ -25,7 +25,7 @@ var articals = {
           '},
       
 },
-    articalthree: {`
+    'articalthree': {`
              title:'vikas narhare | painting three
              heading:'Painting three
              date: 'Aug 26 2017',
@@ -36,23 +36,22 @@ var articals = {
           },
 
 function createTemplate (data) {
-var htmlTempalet = `
-var title = data.title;
-var date = data.date;
-var heading = data.heading;
-var content = data.content;
+   var title = data.title;
+   var date = data.date;
+   var heading = data.heading;
+   var content = data.content;
 
 var htmlTemplate = `
 <html>
-<head>
-<title>
-    ${title}
-</title> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="/ui/style.css" rel="stylesheet" />
-<head>
+  <head>
+    <title>
+        ${title}
+    </title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/ui/style.css" rel="stylesheet" />
+  <head>
 <body>
-    <div class="container">
+       <div class="container">
        <div>
               <a href="/">home</a>
        </div>  
@@ -66,7 +65,7 @@ var htmlTemplate = `
        <div>
             ${content}   
       </div>
-  </div>
+      </div>
 </body>   
 </html>
  ' ;
