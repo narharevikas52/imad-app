@@ -21,12 +21,13 @@ var htmlTempalet = `
 var title = data.title;
 var date = data.date;
 var heading = data.heading;
-var content = data.contentl
+var content = data.content;
 
+var htmlTemplate = `
 <html>
 <head>
 <title>
-    vikas narhare | panitings
+    ${title}
 </title> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="/ui/style.css" rel="stylesheet" />
@@ -49,7 +50,7 @@ var content = data.contentl
   </div>
 </body>   
 </html>
-  ;
+ ' ;
 return htmlTemplate;
 }
 
