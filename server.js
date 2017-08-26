@@ -5,34 +5,34 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articals = {
-     'artical-one': {` 
+     'artical-one': { 
              title:'vikas narhare | painting two',
              heading:'Painting two',
              date: 'Aug 26 2017',
              content:`
                 <p>
                    Hello World! do you like my background painting. This is my painting, hope you like it.
-                </p> '
+                </p>`
           },
-     'artical-two': {` 
+     'artical-two': { 
              title:'vikas narhare | painting two',
              heading:'Painting two',
              date: 'Aug 26 2017',
              content:`
                 <p>
                    Hello World! do you like my background painting. This is my painting, hope you like it.
-                </p> '
-          '},
+                </p>`
+          },
       
-},
-     'artical-three': {`
-             title:'vikas narhare | painting three
-             heading:'Painting three
+
+     'artical-three': {
+             title:'vikas narhare | painting three',
+             heading:'Painting three',
              date: 'Aug 26 2017',
              content:`
                 <p>
                    Hello World! do you like my background painting. This is my painting, hope you like it.
-                </p>'
+                </p>`
           }
 };
 
