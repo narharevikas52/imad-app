@@ -7,8 +7,12 @@ element.innerHTML = 'new value';
 
 // move the image
 var img = document.getElementByid('mady');
+var marginleft =0;
+function moveright () {
+    marginleft = marginleft + 10;
+    img.style.marginleft = marginleft + 'px';
+}
 img.onclick = function () {
-   img.style.marginleft = '100px'; 
-     
+   var interval = setTnterval(moveRight, 100); 
 };
 
