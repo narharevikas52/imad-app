@@ -4,19 +4,36 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-
 var articals = {
-    articalone = {  
-      title:'vikas narhare | painting one',
-      heading:'Painting one',
-      date: 'Aug 26 2017',
-      content:`
-            <p>
-                Hello World! do you like my background painting. This is my painting, hope you like it.
-            </p> '
+    articalone: {` 
+             title:'vikas narhare | painting two',
+             heading:'Painting two',
+             date: 'Aug 26 2017',
+             content:`
+                <p>
+                   Hello World! do you like my background painting. This is my painting, hope you like it.
+                </p> '
+          },
+    articaltwo: {` 
+             title:'vikas narhare | painting two',
+             heading:'Painting two',
+             date: 'Aug 26 2017',
+             content:`
+                <p>
+                   Hello World! do you like my background painting. This is my painting, hope you like it.
+                </p> '
+          '},
+      
 },
-
+    articalthree: {`
+             title:'vikas narhare | painting three
+             heading:'Painting three
+             date: 'Aug 26 2017',
+             content:`
+                <p>
+                   Hello World! do you like my background painting. This is my painting, hope you like it.
+                </p>'
+          },
 
 function createTemplate (data) {
 var htmlTempalet = `
